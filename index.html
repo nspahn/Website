@@ -53,13 +53,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         var data = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
           ['Humidity', 80],
-          ['Tempature', 55],
-          ['BP', 68],
+          ['Soil Tempature', 45],
+		  ['Ambient Tempature', 55],
+          ['Soil Moisture', 68],
 		  ['Sunlight', 68]
         ]);
 
         var options = {
-          width: 600, height: 180,
+          width: 900, height: 270,
           redFrom: 90, redTo: 100,
           yellowFrom:75, yellowTo: 90,
           minorTicks: 5
@@ -85,10 +86,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           data.setValue(3, 1, 60 + Math.round(20 * Math.random()));
           chart.draw(data, options);
         }, 26000);
+		 setInterval(function() {
+          data.setValue(4, 1, 60 + Math.round(20 * Math.random()));
+          chart.draw(data, options);
+        }, 26000);
       }
     </script>
 
-	  </section>
+	  </section
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -194,9 +199,13 @@ img {vertical-align: middle;}
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-center">
 								<li class="active"><a href="index.html"><span>H</span><span>O</span><span>M</span><span>E</span></a></li>
-								<li><a href="about.html" class="link link--yaku"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span></span> <span>U</span><span>S</span></a></li>
-								<li><a href="codes.html" class="link link--yaku"><span>S</span><span>H</span><span>O</span><span>R</span><span>T</span> <span>C</span><span>O</span><span>D</span><span>E</span><span>S</span></a></li>
+								
 								<li><a href="gallery.html" class="link link--yaku"><span>G</span><span>A</span><span>L</span><span>L</span><span>E</span><span>R</span><span>Y</span></a>
+								
+								<li><a href="about.html" class="link link--yaku"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span></span> <span>U</span><span>S</span></a></li>
+								
+								<li><a href="#Graphs" class="scroll link link--yaku"><span>V</span><span>I</span><span>S</span><span>U</span><span>A</span><span>L</span><span>I</span> <span>Z</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span><span>S</span></a></li>
+								
 								<li><a href="#contact" class="scroll link link--yaku"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span> <span>U</span><span>S</span></a></li>
 							</ul>
 							<div class="clearfix"> </div>
@@ -230,15 +239,51 @@ img {vertical-align: middle;}
 	</div>
 	<!--//welcome-->
 	<!--services-->
+	
 	<div class="services">
 		<div class="container">
-			<h3 class="title">Current Readings</h3>
+			<h2 id="Graphs"></h2>
+			<h3 class="title" >Current Readings</h3>
 			<div class = "GuagesGraph" id="chart_div"</div>
 			
 			</div>
 		<div class = "container">
-			<p>Here you can see the most recent sensor data from individual nodes. As well as see notification thresholds. You can read Humidity, Temperature, Barometric Pressure, and Sunlight Intensity.</p>			
+			<p>Here you can see the most recent sensor data from individual nodes. As well as see notification thresholds. You can read Humidity, Soil/Ambient Temperature, Soil Moisture, and Sunlight Intensity.</p>			
 		</div>
+		<div class="services">
+		<div class="container">
+			<h3 class="title">Readings Over Time</h3>
+			
+			
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1226802/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+			
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1226802/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+			
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1226802/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+			
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1226802/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+			
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1226802/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+
+			</div>
+		<div class = "container">
+			<p>Here you can see the node sensor data from individual nodes over time. You can read Humidity, Soil/Ambient Temperature, Soil Moisture, and Sunlight Intensity.</p>			
+		</div>
+			
 	<!--//services-->
 	<!--popular-->
 	<div class="popular">
