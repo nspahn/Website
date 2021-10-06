@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Web Stock Analysis Tool</title>
+    <!-- Bootstrap -->
+	  
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Flask Web Stock Analysis Tool <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume
+			  </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Project1.html">Mesh Agricultural Sensor Network</a>
+              <a class="dropdown-item" href="Project2.html">Electric Skateboard</a>
+			  <a class="dropdown-item" href="Project3.html">Arduino Tissue Incubator</a>
+			  <a class="dropdown-item" href="Project4.html">VR SpaceApps Educational Tool</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color:MediumSeaGreen;" href="#">Open To Contract Work</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Flask Web Stock Analysis Tool</h1>
+            <div class="row justify-content-center"></div>
+            <p class="text-center">This project is a trading App based on python to run backtesting simulations and become a helpful trading tool. This tool is split into three main functions. BackTesting Trade Strategies, Displaying stock data, and set stock price alert. These functions are available through a GUI menu and allow navigation between the processes. The databases used throughout this application involve CSV files for simple local storage. The dependencies used for this program have been built into a requirments.txt file for simple instantiation. The APIs used throughout this project include yfinance, backtrader, NewsAPI, flask, and stock-price-alerts.</p>
+            <img src="images/9fb7aac2-2ca7-4efd-ba38-667d34d8c1bf_rw_1200.gif" alt="" class="img-fluid"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-6 col-12">
+          <h3>View the Pictures</h3>
+          <p>Get a top level understanding of my project by seeing what it looks like.</p>
+          <a class="btn btn-danger btn-lg" href="#anchor-img" role="button">Images</a>
+        </div>
+        <div class="text-center col-md-6 col-12">
+          <h3>See the Code</h3>
+          <p>Here you can see the Git repository. You can always contact me by email or Github with any questions. </p>
+          <a class="btn btn-info btn-lg" href="https://github.com/nspahn/EC500FinalApp" role="button">Documentation</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What is the project?</h2>
+          <p>This project is a Flask application built to test back trading strategies on current stock symbols. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What problem does it solve?</h2>
+          <p>This application enables the user to find buy quickly, set triggers, and test trading strategies based on these markers. Notifications can also be charged and are sent with the method of an HTTP email post. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2> What dependancies does it have?</h2>
+          <ol>
+            <li>yfinance</li>
+            <li>backtrader</li>
+            <li>NewsAPI</li>
+            <li>plotly</li>
+            <li>dash</li>
+            <li>stock-price-alerts        </li>
+          </ol>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What is notable about the project?</h2>
+          <p>This project has a python backend used for trade strategy modeling and pulls stock data using the yfinance API. This web application is integrated into a Flask page, where I used Plotly to build the visualizations. The Stock-Price-Alerts package is also used to set and send notifications when symbols hit a specific metric. </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section>
+		<a id="anchor-img"></a>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/Screenshot 2021-10-04 172621.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Find Buy Sell Markers</h5>
+              <p class="card-text">This application used backtrader to find, buy and sell markets for a given stock symbol. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/9fb7aac2-2ca7-4efd-ba38-667d34d8c1bf_rw_1200.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Stock Symbol Lookup</h5>
+              <p class="card-text">This application utilizes the yfinance API to find current data based on a provided stock symbol.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+	  <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/eb29de0d-85d0-4a9f-9827-3931686d068a_rw_1200.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Backtrading Test</h5>
+              <p class="card-text">The application tests back trading strategies against traditional gains to see if buy and sell markers provide a profitable trading strategy. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/Screenshot 2021-10-04 172404.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Login/Account Creation</h5>
+              <p class="card-text">Tracks users and differentiates them with a user key. Users can create accounts and log in to see their unique trading strategies.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container py-sm-4">
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © NoahSpahn. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

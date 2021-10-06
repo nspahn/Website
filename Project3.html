@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arduino Tissue Incubator</title>
+    <!-- Bootstrap -->
+	  
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Arduino Tissue Incubator <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume
+			  </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Project1.html">Mesh Agricultural Sensor Network</a>
+              <a class="dropdown-item" href="Project2.html">Electric Skateboard</a>
+			  <a class="dropdown-item" href="Project0.html">Flask Web Stock Analysis Tool</a>
+			  <a class="dropdown-item" href="Project4.html">VR SpaceApps Educational Tool</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color:MediumSeaGreen;" href="#">Open To Contract Work</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Arduino Tissue Incubator</h1>
+            <div class="row justify-content-center"></div>
+            <p class="text-center">In this project I designed an apparatus that can hold a 96 well plate and heat it relatively quickly to an ideal experimental temperature while maintaining a constant heat distribution across the entire enclosure.</p>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-6 col-12">
+          <h3>View the Pictures</h3>
+          <p>Get a top level understanding of my project by seeing what it looks like.</p>
+          <a class="btn btn-danger btn-lg" href="#anchor-img" role="button">Images</a>
+        </div>
+        <div class="text-center col-md-6 col-12">
+          <h3>See a video of it in use!</h3>
+          <p>You can always contact me by email or Github with any questions. </p>
+          <a class="btn btn-info btn-lg" href="#anchor-vid" role="button">Video</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What is the project?</h2>
+          <p>We designed a acrylic enclosure that would enable visible light to pass through while also insulating heat within experimental requirements. We utilized heating mesh directed by a micro controller to generate heat and a secondary convection system tied to a temperature sensor for regulation. Validation of even heating was achieved through 3 temperature sensors covering different regions of the enclosure.  The solution was successful in that is was able to through a 72 hour experimental span, regulate internal environmental conditions optimal for tissue growth. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What problem does it solve?</h2>
+          <p>Our client needs an apparatus that can hold a 96 well plate and heat it relatively quickly to an ideal experimental temperature while maintaining a constant heat distribution across the entire enclosure. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2> What constraints does it have?</h2>
+          <ol>
+            <li>96 well plate, must be able to be used on a microscope platform (dimensions: L 127.71mm, H 14.1mm, W 85.43mm)</li>
+            <li>300mm/300mm/100mm (Max size)</li>
+            <li>Allow clear illumination and imaging of 120 x 90 mm well plate</li>
+            <li>Less than 5kg</li>
+            <li>Must maintain constant temperature +/- 0.2 degrees C at any point among the wells</li>
+            <li>Clear view on top and bottom</li>
+            <li>&nbsp;&lt;100w power draw</li>
+          </ol>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What are the objectives of the project?</h2>
+<ol>
+            <li>Steady-state temperature regulation for 96 well plate</li>
+            <li>Apparatus that can heat from cold start </li>
+            <li>Reach Temperature in less than 10 min</li>
+            <li>Sustain Temperature for 1 hour+</li>
+            <li>37 Celsius, +-.2 Celsius (at any point among the wells)</li>
+          </ol>        </div>
+      </div>
+    </div>
+    <hr>
+    <section>
+		<a id="anchor-img"></a>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/b5772f96-4f98-4575-94da-f285f346bd74_rw_600.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Functional Overview</h5>
+              <p class="card-text">This chart demonstrates the interconnected sub-systems for the incubator.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/2eee1cbd-e83f-4692-8dc4-0ba119f58603_rw_600.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Acrylic Enclosure</h5>
+              <p class="card-text">The double-layer enclosure design enables insulation of the well plate while the air can be circulated from the outer layer to heat all sides of the well plate evenly.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+	  <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/3bb002f1-3554-4cfc-868c-5fa6a723f72e_rw_600.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Arduino MicroController</h5>
+              <p class="card-text">An Arduino microcontroller is used to read the temperature sensor and apply corresponding voltage to the heating mesh.  &nbsp; &nbsp;&nbsp; </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+<div class="card-body">
+          <h5 class="card-title">Heating Mesh</h5>
+          
+              <p class="card-text">The incubator design used the heating mesh to heat the outer layer evenly and with limited power consumption.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+		  
+        <div class="container py-sm-4">
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+	  <a id="anchor-vid"></a>
+	  <video controls src = 'images/Test Video(1).MOV'></video>
+    <hr>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © NoahSpahn. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

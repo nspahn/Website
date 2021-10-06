@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mesh Agricultural Sensor Network</title>
+    <!-- Bootstrap -->
+	  
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Mesh Agricultural Sensor Network<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume
+			  </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Project0.html">Flask Web Stock Analysis Tool</a>
+              <a class="dropdown-item" href="Project2.html">Electric Skateboard</a>
+			  <a class="dropdown-item" href="Project3.html">Arduino Tissue Incubator</a>
+			  <a class="dropdown-item" href="Project4.html">VR SpaceApps Educational Tool</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color:MediumSeaGreen;" href="#">Open To Contract Work</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Mesh Agricultural Sensor Network</h1>
+            <div class="row justify-content-center"></div>
+            <p class="text-center">Beginning in the Fall of 2020, Our Team set out with the task of building a network capable of cheaply transmitting sensor data in a mesh protocol. We had additional constraints that the Independent Nodes needed to be sustainable without maintenance for longer than 1 calendar year. The system needed to notify the user of broken nodes as well as channel data through redundancy paths. Budgetary constraints enforced that this system was less than $1000 to develop.</p>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-6 col-12">
+          <h3>View the Published Site</h3>
+          <p>Get a top level understanding of my project by seeing what it looks like.</p>
+          <a class="btn btn-danger btn-lg" href="#https://plants-are-neat.github.io/" role="button">Website</a>
+        </div>
+        <div class="text-center col-md-6 col-12">
+          <h3>See the Code</h3>
+          <p>Here you can see the Git repository. You can always contact me by email or Github with any questions. </p>
+          <a class="btn btn-info btn-lg" href="https://github.com/plants-are-neat/plants-are-neat.github.io" role="button">Documentation</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What is the project?</h2>
+          <p>The smart agriculture sensor network is comprised of sensor nodes and one gateway node. The project requires a node.js server to communicate with the ThingSpeak IoT channels. While the project was developed in a Windows operating system environment, most of the files can be run in different operating system except for the batch files. Correct installation of node.js is also required to allow the project to work properly. The outer microprocessors (nodes) are flashed with a program that allows them to collect sensor data when not sleeping to conserve energy. The node.js server receives information from the mother microprocessor via serial communication to be sent to a remote website.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What problem does it solve?</h2>
+          <p>This project acts as an infrastructure system for monitoring large swaths of the area and collecting local data within a given zone. This data is routed to a single access point to be consolidated and visualized from a web client. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2> What dependancies does it have?</h2>
+          <p>The main two libraries used in the nodes are RH_RF95 and RHMesh. Both libraries are part of a larger library named RadioHead that allows the use of long range (LoRa) radio communication installed in the Arduino.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>What is notable about the project?</h2>
+          <p> Throughout this project, we developed a mesh sensor network system capable of self-healing and communicating data from node to node. The data is routed through the network of nodes to find an access point to push data to the online database. The online database is a relational database organized through the thingspeak API to track independent channel ids, field ids, field values, and time data. We can pull the most recent data point to create google gauges with the most recent data point with this data. Notifications are handled through server-side react scripts and test the database to ensure data coming in is within given thresholds and that each node that should be in the network is successfully communicating data. Broken nodes are identified by a lack of data received by a gateway node over a 30 min period.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section>
+		<a id="anchor-img"></a>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/114eec6a-8979-4201-8697-b0ac22eaad54_rw_600.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Functional Overview</h5>
+              <p class="card-text">Our design has a hierarchy approach to nodes with closer communication paths than those more remote in the network. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/21bada46-daa5-4427-a3d9-28eaef75dd79_rw_600.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Self sustaining in nature for a calendar year</h5>
+              <p class="card-text">The independant Nodes can to be sustanable without maintenence for at least  1 calendar year.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+	  <div class="row">
+        <div class="col-sm-6">
+          <div class="card"> <img class="card-img-top" src="images/582da2bf-d130-47fa-b650-4b5a9c4db07d_rw_600.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Self Healing Mesh Communication</h5>
+              <p class="card-text">This network is self-healing, and with our self-reporting design, users get notifications about possible broken nodes in the network. The network will also continue to function if there is an available path back to the gateway node. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="images/0fbeec44-aa08-4d79-a210-1197f6f977c9_rw_1200.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Voltage Step System</h5>
+              <p class="card-text">This design choice enables the solar recapture system to charge the battery in low light conditions constantly. This design allows each node to safely switch power sources depending on the level of sunlight reflecting off the panels.</p>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+	  <div class="row">
+	    <div class="col-sm-6 col-xl-12">
+	      <div class="card">
+<video controls src="images/Team_27.mp4"> </video>
+<div class="card-body">
+          <h5 class="card-title">Intro Video</h5>
+<p class="card-text">Here is a summary video that explains a little more about the product and it's impact.&nbsp; &nbsp; </p>
+            </div>
+          </div>
+        </div>
+<p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container py-sm-4">
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © NoahSpahn. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
